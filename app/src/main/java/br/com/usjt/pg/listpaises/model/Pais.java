@@ -1,4 +1,4 @@
-package br.com.usjt.pg.listpaises;
+package br.com.usjt.pg.listpaises.model;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -26,6 +26,17 @@ public class Pais implements Serializable, Comparable {
     private ArrayList<String> fronteiras;
     private double latitude;
     private double longitude;
+
+    public Pais(){
+
+    }
+
+    public Pais(String nome, String regiao, String capital, String bandeira) {
+        this.nome = nome;
+        this.regiao = regiao;
+        this.capital = capital;
+        this.bandeira = bandeira;
+    }
 
     public String getNome() {
         return nome;

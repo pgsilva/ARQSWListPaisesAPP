@@ -1,4 +1,4 @@
-package br.com.usjt.pg.listpaises;
+package br.com.usjt.pg.listpaises.controller;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Spinner;
+
+import br.com.usjt.pg.listpaises.R;
 
 /**
  * Paulo Guilherme da Silva 816113977
@@ -19,26 +21,24 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        spinnerContinente = (Spinner)findViewById(R.id.spinnerContinente);
-        spinnerContinente.setOnItemSelectedListener(new PaisSelecionado());
+        spinnerContinente = findViewById(R.id.spinnerContinente);
+        spinnerContinente.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                continente = (String) adapterView.getItemAtPosition(i);
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+
+            }
+        });
+
     }
 
-    public void listarPaises(View view){
+    public void listarPaises(View view) {
         Intent intent = new Intent(this, ListaPaisesActivity.class);
-
         intent.putExtra(CHAVE, continente);
         startActivity(intent);
-    }
-
-    private class PaisSelecionado implements AdapterView.OnItemSelectedListener {
-        @Override
-        public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-            continente = (String) parent.getItemAtPosition(position);
-        }
-
-        @Override
-        public void onNothingSelected(AdapterView<?> parent) {
-
-        }
     }
 }
