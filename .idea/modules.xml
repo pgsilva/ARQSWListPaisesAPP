@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ListPaises.iml" filepath="$PROJECT_DIR$/ListPaises.iml" />
+      <module fileurl="file://C:\Users\pg__s\OneDrive\Documentos\Git\listapaisesDESMOB\ListPaises.iml" filepath="C:\Users\pg__s\OneDrive\Documentos\Git\listapaisesDESMOB\ListPaises.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\Users\pg__s\OneDrive\Documentos\Git\listapaisesDESMOB\app\app.iml" filepath="C:\Users\pg__s\OneDrive\Documentos\Git\listapaisesDESMOB\app\app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/listapaisesDESMOB.iml" filepath="$PROJECT_DIR$/listapaisesDESMOB.iml" />
     </modules>
   </component>
 </project>

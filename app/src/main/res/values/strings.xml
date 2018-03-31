@@ -1,6 +1,8 @@
 <resources>
 
     <string name="app_name">ContinenteApp</string>
+    <string name="lblContinente">Continente:</string>
+    <string name="btn_busca">Buscar</string>
     <string name="buscar_paises_continente">Buscar Países</string>
     <string name="text_spinner_continentes">Seleiconar um continente:</string>
     <string name="txt_nome">Nome:</string>
